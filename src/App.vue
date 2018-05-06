@@ -17,7 +17,7 @@
 
       <ul class="list-group">
         <li v-for="(todo,index) in todos" class="list-group-item">
-          {{todo.title}
+          {{todo.title}}
           <button class="btn btn-warning btn-xs pull-right" v-on:click="removeTodo(index)">X</button>
         </li>
       </ul>
@@ -46,10 +46,7 @@
 
       addTodo(newTodo) {
         this.todos.push(newTodo)
-        this.newTodo = {
-          id: null,
-          title: ''
-        }
+        this.newTodo = {id: null,title: ''}
       },
 
       removeTodo(index) {
